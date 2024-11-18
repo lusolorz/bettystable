@@ -16,8 +16,9 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
-    <link rel = "stylesheet" href = "/assets/css/style.css" />
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" type = "image/x-icon" />
+    <link rel = "stylesheet" href = "{{ site.baseurl }}/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico" type = "image/x-icon" />
 </head>
 <body>
     <!-- <h1>Betty's Table</h1> -->
@@ -25,7 +26,7 @@
         <div class = "container"> 
             <div class = "logo" id = "logo">
                 <a href="index.html"> 
-                    <img src="/assets/images/Icon_red_blue.png" alt="Betty's Table Logo">
+                    <img src="{{ site.baseurl }}/assets/images/Icon_red_blue.png" alt="Betty's Table Logo">
                 </a>
             </div>
             <div class = "main-menu" id = "main-menu">
@@ -63,7 +64,7 @@
         {% endfor %}
     </ul>
 
-    <script src = "/assets/js/main.js "></script>
+    <script src = "{{ site.baseurl }}/assets/js/main.js "></script>
 
 </body>
 </html>
