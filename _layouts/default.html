@@ -17,8 +17,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
     <link rel = "stylesheet" href = "{{ site.baseurl }}/assets/css/style.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico" type = "image/x-icon" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
 </head>
 <body>
     <!-- <h1>Betty's Table</h1> -->
@@ -55,6 +56,67 @@
     </nav>
 
     
+    <div class="container">
+        <div class="row no-gutters">
+          <div class="col-xl-6 col-12 mb-5 mb-xl-0">
+            <div class="media media-news">
+              <div class="media-img">
+                <img src="https://www.bootdey.com/image/350x280/FFB6C1/000000" alt="Generic placeholder image">
+              </div>
+              <div class="media-body">
+                <span class="media-date">25 july 2017</span>
+                <h5 class="mt-0 sep">Finibus Bonorum Malor.</h5>
+                <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+                <a href="blog-post-right-sidebar.html" class="btn btn-transparent">View More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xl-6 col-12">
+            <div class="media media-news">
+              <div class="media-img">
+                <img src="https://www.bootdey.com/image/350x280/87CEFA/000000" alt="Generic placeholder image">
+              </div>
+              <div class="media-body">
+                <span class="media-date">13 August 2018</span>
+                 <h5 class="mt-0 sep"> Tincidunt dui ornare</h5>
+                <p>Facilisi morbi tempus iaculis urna id volutpat lacus. Mi eget mauris pharetra et. Fermentum iaculis</p>
+                <a href="blog-post-right-sidebar.html" class="btn btn-transparent">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row no-gutters mt-4">
+          <div class="col-xl-6 col-12 mb-5 mb-xl-0">
+            <div class="media media-news">
+              <div class="media-img">
+                <img src="https://www.bootdey.com/image/350x280/FF7F50/000000" alt="Generic placeholder image">
+              </div>
+              <div class="media-body">
+                <span class="media-date">25 july 2017</span>
+                <h5 class="mt-0 sep">Finibus Bonorum Malor.</h5>
+                <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+                <a href="blog-post-right-sidebar.html" class="btn btn-transparent">View More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xl-6 col-12">
+            <div class="media media-news">
+              <div class="media-img">
+                <img src="https://www.bootdey.com/image/350x280/20B2AA/000000" alt="Generic placeholder image">
+              </div>
+              <div class="media-body">
+                <span class="media-date">13 August 2018</span>
+                 <h5 class="mt-0 sep"> Tincidunt dui ornare</h5>
+                <p>Facilisi morbi tempus iaculis urna id volutpat lacus. Mi eget mauris pharetra et. Fermentum iaculis</p>
+                <a href="blog-post-right-sidebar.html" class="btn btn-transparent">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <ul>
         {% for post in site.posts %}
@@ -65,6 +127,8 @@
     </ul>
 
     <script src = "{{ site.baseurl }}/assets/js/main.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
