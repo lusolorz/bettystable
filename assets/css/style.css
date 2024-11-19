@@ -9,7 +9,8 @@ body{
     font-family: "Slabo 27px", serif;
     font-size: 16px;
     line-height: 1.5;
-    background: white;
+    background: white; 
+    /* background: linear-gradient(to bottom, #514b63, #cf5d41); Example gradient from pink to orange */
 }
 
 a{
@@ -39,7 +40,7 @@ img{
 
   .navbar .main-menu{
     flex-grow: 1;
-    background: #FFF8DC;
+    background: #efebdb;
   }
   .main-menu {
     opacity: 0;
@@ -56,7 +57,10 @@ img{
   /* Initial hidden state for logo */
   .logo {
     opacity: 0.0;  /* Start fully transparent */
-    transition: opacity 3s ease; /* Adjust duration as needed */
+    transition: opacity 2s ease; /* Adjust duration as needed */
+    position: relative;
+    z-index: 2; /* Make sure the logo stays on top */
+    margin-right: -20px; /* Move the logo up to overlap the navbar */
   }
 
   /* Add a fade-in class to make it visible */
@@ -78,8 +82,9 @@ img{
   .navbar ul li a{
     padding: 10px 20px;
     display: block;
-    transition: 0.5s;
+    transition: 0.4s;
     font-size: 30px;
+    color:#333
   }
 
   .navbar ul li a:hover{
@@ -109,11 +114,13 @@ img{
     margin-top:20px;
   }
   .media.media-news {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      /* display: -webkit-box;
+      display: -ms-flexbox; */
+      /* display: flex;
+      flex-direction: row; */
       position: relative;
       padding-bottom: 210px;
+      gap: 1rem;
   }
   @media (min-width: 768px) {
       .media.media-news {
@@ -129,7 +136,7 @@ img{
   }
   .media.media-news .media-body {
       padding: 20px;
-      box-shadow: 0 22px 28px 0 rgba(0, 0, 0, 0.06);
+      box-shadow: 0 22px 28px 0 rgba(0, 0, 0, 0.90);
       background: #fff;
       position: absolute;
       width: 85%;
@@ -176,4 +183,8 @@ img{
   }
   .media.media-news .media-body .common-btn {
       margin-top: 10px;
+  }
+  .media-img img {
+    width: 100%; /* Make sure the image fits inside the container */
+    height: auto; /* Maintain the image aspect ratio */
   }
