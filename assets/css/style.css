@@ -116,8 +116,8 @@ img{
   .media.media-news {
       /* display: -webkit-box;
       display: -ms-flexbox; */
-      /* display: flex;
-      flex-direction: row; */
+      display: flex;
+      flex-direction: column;
       position: relative;
       padding-bottom: 210px;
       gap: 1rem;
@@ -187,4 +187,20 @@ img{
   .media-img img {
     width: 100%; /* Make sure the image fits inside the container */
     height: auto; /* Maintain the image aspect ratio */
+  }
+
+  .posts-home{
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .posts-home-right
+  .posts-home-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 210px;
+    width: 100%; 
+    /* gap: 1rem; */
   }
