@@ -1,0 +1,68 @@
+.topper {
+    /* Flexbox Layout for Row */
+    position: relative; /* Use relative instead of absolute */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    width: 100%; /* Full width of the page */
+    height: 300px;
+    background-color: #fff; /* Optional background color */
+    gap: 170px; /* Space between image and text */
+    
+}
+
+.topper h1 {
+    font-family: 'Cinzel';
+    font-size: 100px; /* Responsive font size */
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0; /* Remove default margin */
+}
+
+.logo {
+    width: 180px; /* Control size of logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.menu_bar{
+    width:80px;
+}
+
+.vector_1{
+    /* Vector 1 */
+    position: absolute;
+    width: 2057px;
+    height: 1880px;
+    left: -473px;
+    top: 428px;
+    z-index: -1; /* Lower z-index = behind */
+}
+
+.first{
+    /* My name is beatriz solorzano and this is my blog about blaha blaha blah. Ive lived all over and currently reside in Switzerland. This is a blog about cusine from around the world and a site to buy some off my curations and creations */
+    /* My name is beatriz solorzano and this is my blog about blaha blaha blah. Ive lived all over and currently reside in Switzerland. This is a blog about cusine from around the world and a site to buy some off my curations and creations */
+    position: absolute;
+    width: 799px;
+    height: 132px;
+    left: 700px;
+    right: 94px;
+    top: 310px;
+    bottom: 2909px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
